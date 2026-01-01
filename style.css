@@ -66,6 +66,15 @@ nav a:hover{
   border-radius:999px;
   cursor:pointer;
 }
+#web_logo{
+  width: 300px;
+  margin-top: 20px;
+  border-radius:160px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  position: absolute;
+  right: 160px;
+  top: 160px;
+}
 
 .btn-primary{
   background:linear-gradient(135deg,var(--primary),var(--secondary));
