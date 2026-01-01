@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voter Education Platform</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+</head>
+
+<body>
+
+<nav>
+  <strong>Voter Awareness Platform</strong>
+  <div>
+    <a href="#learn">Learn</a>
+    <a href="#verify">Verify</a>
+    <a href="#demo">Demo Vote</a>
+    <a href="#ai">Ask AI</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Voter Education & Awareness Platform</h1>
+    <p>Neutral, verified and simple explanations about elections and One Nation One Election.</p>
+    <button class="btn-primary">Explore Education</button>
+    <button class="btn-secondary">Verify Information</button>
+  </div>
+</div>
+
+<section id="learn">
+<h2>Learn About Elections</h2>
+<div class="container swiper">
+        
+<div class="card-list swiper-wrapper">
+<div class="card-item swiper-slide">
+<div class="image-container">
+<img src="img1.jpeg" class="image">
+</div>
+<h3 class="info">Simultaneous Elections in Early Years</h3>
+<p class="information">From 1951-52 to 1967,elections to the Lok Sabha and State Legislative Assemblies were largely held simultaneously, following a common electoral cycle. </p>
+<!-- <p class="inform">1951-1967:Lok Sabha and State elections were held together</p>-->
+                   
+</div>
+                <div class="card-item swiper-slide">
+                     <div class="image-container">
+                    <img src="img2.jpeg" alt="" class="image">
+                    </div>
+                    <h3 class="info">Frequent Elections and Their Consequences</h3>
+                    <p class="information">At present, elections in India are held almost every year, and in some cases, multiple elections take place within a single year, leading to repeated electoral processes.</p>
+                 <!--    <p class="inform">Elections now happen almost every year.</p>-->
+                    
+                </div>
+                <div class="card-item swiper-slide">
+                    <div class="image-container">
+                    <img src="img4.jpeg" alt="" class="image">
+                    </div>
+                    <h3 class="info">Administrative, Security, and Development Impact</h3>
+                    <p class="information" style="font-size: 13px;">Frequent elections cause heavy public expenditure, long deployment of security forces and officials, and prolonged enforcement of the Model Code of Conduct, delaying development work.</p>
+                  <!--   <p class="inform">Frequent elections strain administration and delay development.</p>-->
+                  
+                    
+                </div>
+                <div class="card-item swiper-slide">
+                    <div class="image-container">
+                    <img src="img5.jpeg" alt="" class="image">
+                    </div>
+                    <h3 class="info">Law Commission’s Recommendation (170th Report)</h3>
+                    <p class="information" style="font-size: 13px;">The Law Commission of India's 170th Report recommended ending yearly elections and holding Lok Sabha and State Assembly elections together every five years,with separate elections only in exceptional cases.</p>
+                     <!--<p class="inform">Law Commission backed elections once in five years.</p>-->
+                    
+                    
+                </div>
+                <div class="card-item swiper-slide">
+                    <div class="image-container">
+                    <img src="img3.jpeg" alt="" class="image">
+                    </div>
+                    <h3 class="info">Parliamentary Standing Committee Recommendation (2015)</h3>
+                    <p class="information">The Parliamentary Standing Committee (79th Report, 2015) examined the feasibility of simultaneous elections and recommended a practical two-phase method</p>
+                    <!-- <p class="inform">Parliamentary Committee proposed a two-phase model.</p>-->
+                    
+                </div>
+                <div class="card-item swiper-slide">
+                    <div class="image-container">
+                    <img src="img7.jpeg"alt="" class="image">
+                    </div>
+                    <h3 class="info">Formation of High Level Committee (HLC)</h3>
+                    <p class="information">Considering expert recommendations and national interest, the Government of India constituted a High Level Committee to examine and implement simultaneous elections.
+</p>
+                   <!--  <p class="inform">Government formed a High Level Committee on ONOE.</p>-->
+                   
+                </div>
+                <div class="card-item swiper-slide">
+                     <div class="image-container">
+                    <img src="img6.jpeg" alt="" class="image">
+                    </div>
+                    <h3 class="info">Simultaneous Elections Viewed as National Interest</h3>
+                    <p class="information">The Government of India stated that holding simultaneous elections is desirable in the national interest, considering governance efficiency and institutional recommendations.</p>
+                    <!-- <p class="inform">Simultaneous elections are seen as a national interest measure.</p>-->
+                    
+                    
+                </div>
+ </div>
+
+             <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+     <script src="script1.js"></script>
+</section>
+
+
+<section id="verify">
+<h2>Verify Myths & Misinformation</h2>
+<div class="myth-box">
+  <img src="comic.jpeg" alt="Myth vs Reality Comic">
+</div>
+</section>
+
+<section id="demo">
+<h2>Experience Sample Voting</h2>
+<div class="evm">
+  <p>Try our demo EVM and VVPAT simulation.</p>
+  <iframe
+    src="https://sample-voting-process1.netlify.app/"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
+</section>
+
+<section id="ai">
+<h2>Ask LokGyan AI</h2>
+<p>LokGyan AI is trained on official documents and verified sources.</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script>
+new Swiper(".swiper",{
+  slidesPerView:3,
+  spaceBetween:30,
+  centeredSlides:true,
+  loop:true,
+  pagination:{el:".swiper-pagination",clickable:true},
+  navigation:{
+    nextEl:".swiper-button-next",
+    prevEl:".swiper-button-prev"
+  },
+  breakpoints:{
+    0:{slidesPerView:1},
+    768:{slidesPerView:2},
+    1024:{slidesPerView:3}
+  }
+});
+</script>
+
+<script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/12/29/05/20251229053732-LPEJG7NS.js" defer></script>
+
+<footer>
+  Sources: Election Commission of India | Govt. Reports  
+  <br>Educational simulation only.
+</footer>
+
+</body>
+</html>
