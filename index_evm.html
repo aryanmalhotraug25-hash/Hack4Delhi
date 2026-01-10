@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dual EVM + VVPAT Simulation</title>
+  <link rel="stylesheet" href="style_evm.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Dual EVM + VVPAT Voting Simulation</h1>
+    <p>This is for education purposes only</p>
+    <img src ="EVM/eci-logo-white.png" alt="ECI Logo" id ="eci-logo">
+    <img src="EVM/emblem.png" alt="Emblem" id ="emblem">
+  </header>
+
+  <main class="systems">
+    <!-- Lok Sabha System -->
+    <section class="system">
+      <h2>Lok Sabha</h2>
+      <div class="container">
+        <!-- EVM -->
+        <section class="evm">
+          <h3>Electronic Voting Machine</h3>
+          <div class="lights">
+            <div id="lok-red" class="light red"></div>
+            <div id="lok-green" class="light green"></div>
+          </div>
+          <p id="lok-status" class="status"></p>
+          <ul class="candidate-list">
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="lok-symbols/bat.jpg" alt="bat" class="symbol"/>
+                <div>
+                  <span class="candidate-name">A. Sharma</span><br>
+                  <span class="party-name">Unity Party</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="lok" data-id="c1">Vote</button>
+            </li>
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="lok-symbols/football.jpg" alt="football" class="symbol"/>
+                <div>
+                  <span class="candidate-name">B. Singh</span><br>
+                  <span class="party-name">Progress Front</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="lok" data-id="c2">Vote</button>
+            </li>
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="lok-symbols/basketball.jpg" alt="basketball" class="symbol"/>
+                <div>
+                  <span class="candidate-name">C. Kumar</span><br>
+                  <span class="party-name">Reform Alliance</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="lok" data-id="c3">Vote</button>
+            </li>
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="lok-symbols/badminton.jpg" alt="badminton" class="symbol"/>
+                <div>
+                  <span class="candidate-name">D. Verma</span><br>
+                  <span class="party-name">Citizen First</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="lok" data-id="c4">Vote</button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- VVPAT -->
+        <section class="vvpat">
+          <h3>VVPAT</h3>
+          <div class="vvpat-window">
+            <div id="lok-slip" class="vvpat-slip"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Vidhan Sabha System -->
+    <section class="system">
+      <h2>Vidhan Sabha</h2>
+      <div class="container">
+        <!-- EVM -->
+        <section class="evm">
+          <h3>Electronic Voting Machine</h3>
+          <div class="lights">
+            <div id="vid-red" class="light red"></div>
+            <div id="vid-green" class="light green"></div>
+          </div>
+          <p id="vid-status" class="status"></p>
+          <ul class="candidate-list">
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="vidhan-symbols/apple.jpg" alt="apple" class="symbol"/>
+                <div>
+                  <span class="candidate-name">E. Patel</span><br>
+                  <span class="party-name">Bright Future</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="vid" data-id="c1">Vote</button>
+            </li>
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="vidhan-symbols/mango.jpg" alt="mango" class="symbol"/>
+                <div>
+                  <span class="candidate-name">F. Khan</span><br>
+                  <span class="party-name">Green Alliance</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="vid" data-id="c2">Vote</button>
+            </li>
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="vidhan-symbols/stawberry.jpg" alt="stawberry" class="symbol"/>
+                <div>
+                  <span class="candidate-name">G. Das</span><br>
+                  <span class="party-name">Knowledge Party</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="vid" data-id="c3">Vote</button>
+            </li>
+            <li class="candidate">
+              <div class="candidate-info">
+                <img src="vidhan-symbols/banana.jpg" alt="banana" class="symbol"/>
+                <div>
+                  <span class="candidate-name">H. Mehta</span><br>
+                  <span class="party-name">National Front</span>
+                </div>
+              </div>
+              <button class="vote-btn" data-system="vid" data-id="c4">Vote</button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- VVPAT -->
+        <section class="vvpat">
+          <h3>VVPAT</h3>
+          <div class="vvpat-window">
+            <div id="vid-slip" class="vvpat-slip"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Beep sound -->
+  <audio id="beep-sound" src="EVM/beep.mp3" preload="auto"></audio>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Dual EVM + VVPAT Simulation | Educational Use</p>
+  </footer>
+
+  <script src="script_evm.js"></script>
+</body>
+</html>

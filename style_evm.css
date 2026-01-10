@@ -1,0 +1,204 @@
+/* General page styling */
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  color: #1f2937;
+  position: relative;
+}
+
+header.site-header {
+  background: #0b3a6f;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+header p {
+  margin: 5px 0 0;
+  color: #dce9ff;
+}
+
+#eci-logo {
+    margin-top: 20px;
+    width: 120px;
+    height: 80px; 
+    object-fit: contain;
+    position: absolute;
+    top: 20px;     /* Adjust vertical position */
+    right: 30px;   /* Distance from right edge */
+}
+
+#emblem {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px; 
+    object-fit: contain;
+    position: absolute;
+    top: 20px;     /* Adjust vertical position */
+    left: 30px;   /* Distance from left edge */
+}
+
+/* System sections */
+.system {
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.system h2 {
+  margin-bottom: 10px;
+  color: #0b3a6f;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* EVM + VVPAT side by side */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Panels */
+.evm, .vvpat {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 20px;
+}
+
+/* Candidate list */
+.candidate-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.candidate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafbff;
+  transition: transform 0.2s;
+}
+.candidate:hover {
+  transform: scale(1.02);
+}
+
+.candidate-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.symbol {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  object-fit: contain;
+}
+
+.candidate-name {
+  font-weight: 600;
+}
+.party-name {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Vote button */
+.vote-btn {
+  padding: 10px 16px;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.s;
+}
+.vote-btn:hover {
+  background: #0ea879;
+}
+
+/* Lights */
+.lights {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.light {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0.3;
+  border: 2px solid #333;
+}
+.green { background: #10b981; }
+.red { background: #d7263d; }
+.light.active {
+  opacity: 1;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.status {
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #0b3a6f;
+}
+
+/* VVPAT window */
+.vvpat-window {
+  margin-top: 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: #f9fafb;
+  position: relative;
+  overflow: hidden;
+}
+
+.vvpat-slip {
+  position: absolute;
+  bottom: -220px;
+  width: 90%;
+  background: #fffef6;
+  border: 1px solid #f5d48a;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: bottom 0.6s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+.vvpat-slip.show {
+  bottom: 20px;
+  opacity: 1;
+}
+
+/* Footer */
+footer.site-footer {
+  text-align: center;
+  color: #6b7280;
+  margin: 30px 0;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

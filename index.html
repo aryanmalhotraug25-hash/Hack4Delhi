@@ -21,8 +21,8 @@
   <strong>Voter Awareness Platform</strong>
   <div>
     <a href="#learn">Learn</a>
-    <a href="#verify">Verify</a>
-    <a href="#demo">Demo Vote</a>
+    <a href="#combined">Verify</a>
+    <a href="#combined">Demo Vote</a>
     <a href="#ai">Ask AI</a>
   </div>
 </nav>
@@ -30,11 +30,19 @@
 <div class="hero">
   <div class="hero-text">
     
-    <h1>Voter Education & Awareness Platform</h1>
+    <h1 id="hero-title">Voter Education & Awareness Platform</h1>
     <img src="web_logo.jpeg" alt="Voter Education Logo" id = "web_logo">
-    <p>Neutral, verified and simple explanations about elections and One Nation One Election.</p>
-    <button class="btn-primary">Explore Education</button>
-    <button class="btn-secondary">Verify Information</button>
+    <p id="hero-desc">Neutral, verified and simple explanations about elections and One Nation One Election.</p>
+    <!-- Button 1: Text to Speech -->
+    <button id="btn-speak" class="btn-primary" onclick="toggleSpeech()">
+        🔊 Listen to Summary
+    </button>
+
+    <!-- Button 2: Language Toggle -->
+    <button id="btn-lang" class="btn-secondary" onclick="toggleLanguage()">
+         Read in Hindi
+    </button>
+</div>
     
   </div>
 </div>
@@ -46,67 +54,67 @@
 <div class="card-list swiper-wrapper">
 <div class="card-item swiper-slide">
 <div class="image-container">
-<img src="img1.jpeg" class="image">
+<img src="swipe-cards/img1.jpeg" class="image">
 </div>
-<h3 class="info">Simultaneous Elections in Early Years</h3>
-<p class="information">From 1951-52 to 1967,elections to the Lok Sabha and State Legislative Assemblies were largely held simultaneously, following a common electoral cycle. </p>
+<h3 id="t1" class="info">Simultaneous Elections in Early Years</h3>
+<p id="d1" class="information">From 1951-52 to 1967,elections to the Lok Sabha and State Legislative Assemblies were largely held simultaneously, following a common electoral cycle. </p>
 <!-- <p class="inform">1951-1967:Lok Sabha and State elections were held together</p>-->
                    
 </div>
                 <div class="card-item swiper-slide">
                      <div class="image-container">
-                    <img src="img2.jpeg" alt="" class="image">
+                    <img src="swipe-cards/img2.jpeg" alt="" class="image">
                     </div>
-                    <h3 class="info">Frequent Elections and Their Consequences</h3>
-                    <p class="information">At present, elections in India are held almost every year, and in some cases, multiple elections take place within a single year, leading to repeated electoral processes.</p>
+                    <h3 id="t2" class="info">Frequent Elections and Their Consequences</h3>
+                    <p id="d2" class="information">At present, elections in India are held almost every year, and in some cases, multiple elections take place within a single year, leading to repeated electoral processes.</p>
                  <!--    <p class="inform">Elections now happen almost every year.</p>-->
                     
                 </div>
                 <div class="card-item swiper-slide">
                     <div class="image-container">
-                    <img src="img4.jpeg" alt="" class="image">
+                    <img src="swipe-cards/img4.jpeg" alt="" class="image">
                     </div>
-                    <h3 class="info">Administrative, Security, and Development Impact</h3>
-                    <p class="information" style="font-size: 13px;">Frequent elections cause heavy public expenditure, long deployment of security forces and officials, and prolonged enforcement of the Model Code of Conduct, delaying development work.</p>
+                    <h3 id="t3" class="info">Administrative, Security, and Development Impact</h3>
+                    <p id="d3" class="information" style="font-size: 13px;">Frequent elections cause heavy public expenditure, long deployment of security forces and officials, and prolonged enforcement of the Model Code of Conduct, delaying development work.</p>
                   <!--   <p class="inform">Frequent elections strain administration and delay development.</p>-->
                   
                     
                 </div>
                 <div class="card-item swiper-slide">
                     <div class="image-container">
-                    <img src="img5.jpeg" alt="" class="image">
+                    <img src="swipe-cards/img5.jpeg" alt="" class="image">
                     </div>
-                    <h3 class="info">Law Commission’s Recommendation (170th Report)</h3>
-                    <p class="information" style="font-size: 13px;">The Law Commission of India's 170th Report recommended ending yearly elections and holding Lok Sabha and State Assembly elections together every five years,with separate elections only in exceptional cases.</p>
+                    <h3 id="t4" class="info">Law Commission’s Recommendation (170th Report)</h3>
+                    <p id="d4" class="information" style="font-size: 13px;">The Law Commission of India's 170th Report recommended ending yearly elections and holding Lok Sabha and State Assembly elections together every five years,with separate elections only in exceptional cases.</p>
                      <!--<p class="inform">Law Commission backed elections once in five years.</p>-->
                     
                     
                 </div>
                 <div class="card-item swiper-slide">
                     <div class="image-container">
-                    <img src="img3.jpeg" alt="" class="image">
+                    <img src="swipe-cards/img3.jpeg" alt="" class="image">
                     </div>
-                    <h3 class="info">Parliamentary Standing Committee Recommendation (2015)</h3>
-                    <p class="information">The Parliamentary Standing Committee (79th Report, 2015) examined the feasibility of simultaneous elections and recommended a practical two-phase method</p>
+                    <h3 id="t5" class="info">Parliamentary Standing Committee Recommendation (2015)</h3>
+                    <p id="d5" class="information">The Parliamentary Standing Committee (79th Report, 2015) examined the feasibility of simultaneous elections and recommended a practical two-phase method</p>
                     <!-- <p class="inform">Parliamentary Committee proposed a two-phase model.</p>-->
                     
                 </div>
                 <div class="card-item swiper-slide">
                     <div class="image-container">
-                    <img src="img7.jpeg"alt="" class="image">
+                    <img src="swipe-cards/img7.jpeg"alt="" class="image">
                     </div>
-                    <h3 class="info">Formation of High Level Committee (HLC)</h3>
-                    <p class="information">Considering expert recommendations and national interest, the Government of India constituted a High Level Committee to examine and implement simultaneous elections.
+                    <h3 id="t6" class="info">Formation of High Level Committee (HLC)</h3>
+                    <p id="d6" class="information">Considering expert recommendations and national interest, the Government of India constituted a High Level Committee to examine and implement simultaneous elections.
 </p>
                    <!--  <p class="inform">Government formed a High Level Committee on ONOE.</p>-->
                    
                 </div>
                 <div class="card-item swiper-slide">
                      <div class="image-container">
-                    <img src="img6.jpeg" alt="" class="image">
+                    <img src="swipe-cards/img6.jpeg" alt="" class="image">
                     </div>
-                    <h3 class="info">Simultaneous Elections Viewed as National Interest</h3>
-                    <p class="information">The Government of India stated that holding simultaneous elections is desirable in the national interest, considering governance efficiency and institutional recommendations.</p>
+                    <h3 id="t7" class="info">Simultaneous Elections Viewed as National Interest</h3>
+                    <p id="d7" class="information">The Government of India stated that holding simultaneous elections is desirable in the national interest, considering governance efficiency and institutional recommendations.</p>
                     <!-- <p class="inform">Simultaneous elections are seen as a national interest measure.</p>-->
                     
                     
@@ -124,23 +132,165 @@
 </section>
 
 
-<section id="verify">
-<h2>Verify Myths & Misinformation</h2>
-<div class="myth-box">
-  <img src="comic.jpeg" alt="Myth vs Reality Comic">
+<div id="combined">
+
+  <div class="combined-grid">
+    <div class="comic-section">
+      <h2>What’s Myth, What’s Reality?</h2>
+      <p>
+        The featured comic takes a critical look at the idea of
+        <strong>One Nation, One Election</strong>, separating myths from reality.
+        It highlights common misconceptions, examines practical challenges,
+        and encourages readers to reflect on the broader impact on democracy
+        and governance.
+      </p>
+
+      <a href="index_comic.html" target="_blank" class="comic-link">
+        🔗 <strong>Clear your misconceptions in a groundbreaking way!</strong>
+      </a>
+    </div>
+
+    <div class="evm">
+      <h2>Experience Sample Voting !</h2>
+      <p>
+        Discover how two <strong>Electronic Voting Machines (EVMs)</strong> work alongside two
+        <strong>Voter Verifiable Paper Audit Trail (VVPAT)</strong> units in an election conducted
+        under the One Nation, One Election (ONOE) framework. This interactive demo
+        simulates the voting experience to help citizens understand how multiple
+        elections can be managed efficiently and transparently at the same time.
+      </p>
+
+      <a href="index_evm.html" target="_blank" class="demo-link">
+        🔗 <strong>Experience the Demo Simulation of voting process under ONOE!</strong>
+      </a>
+    </div>
+  </div>
 </div>
+
+
+    <section class="impact-section">
+  <h2 style="text-align: left;">Why Election Timing Matters</h2>
+  <p class="impact-subtitle" style="text-align: left;">
+    Understanding the administrative and economic impact of election cycles
+  </p>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>₹4,000–₹5,000 Cr</h3>
+      <p style="font-size: 16px">Estimated cost of conducting a single General Election</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>30–40% Savings</h3>
+      <p style="font-size: 16px">Possible reduction in logistics & administrative costs</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>10+ Lakh Personnel</h3>
+      <p style="font-size: 16px">Security and polling staff deployed per election cycle</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Uninterrupted Governance</h3>
+      <p style="font-size: 16px">Reduced interruptions in governance caused by the Model Code of Conduct</p>
+    </div>
+  </div>
+  
+  <div class="graph-section">
+  <h3 style="text-align:center;">Election Cost Insights</h3>
+
+
+  <div class="graph-grid">
+    <div class="graph-card">
+      <h4>Cost Comparison (Estimated)</h4>
+      <canvas id="costChart"></canvas>
+      <!-- Savings Impact Section -->
+<div class="savings-impact">
+  <h4 class="impact-title">What could this money build?</h4>
+
+  <div class="impact-items">
+    <div class="impact-item">
+      <span class="impact-icon">🏥</span>
+      <p><strong>20</strong><br>New Hospitals</p>
+    </div>
+
+    <div class="impact-item">
+      <span class="impact-icon">🏫</span>
+      <p><strong>500</strong><br>Smart Schools</p>
+    </div>
+
+    <div class="impact-item">
+      <span class="impact-icon">🛣️</span>
+      <p><strong>100 km</strong><br>Highways</p>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="graph-card">
+      <h4>Election Expenditure Breakdown</h4>
+      <canvas id="breakdownChart"></canvas>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </section>
 
-<section id="demo">
-<h2>Experience Sample Voting</h2>
-<div class="evm">
-  <p>Try our demo EVM and VVPAT simulation.</p>
-  <iframe
-    src="https://sample-voting-process1.netlify.app/"
-    loading="lazy"
-    allowfullscreen>
-  </iframe>
-</div>
+<section class="crisis-section">
+    <h2 style="text-align:center; color:#2d3748; margin-bottom:10px;">🚧 The Challenges & Solutions</h2>
+    <p style="text-align:center; margin-bottom:40px; color:#718096;">Can you solve the critical roadblocks of One Nation One Election?</p>
+
+    <div class="crisis-container">
+        
+        <!-- CHALLENGE 1: HUNG ASSEMBLY -->
+        <div class="crisis-card">
+            <div class="crisis-header">
+                <span class="icon">⚠️</span>
+                <h3>CRISIS: Govt Collapse</h3>
+            </div>
+            <div class="crisis-body">
+                <p><strong>Scenario:</strong> The ONOE cycle is set for 2024-2029. But in 2026, a State Government falls due to a No-Confidence Motion. The cycle is broken!</p>
+                <button class="solve-btn" onclick="revealSolution(this)">See Solution</button>
+            </div>
+            <div class="solution-body">
+                <div class="solution-tag">THE REMAINDER TERM</div>
+                <p><strong>Logic:</strong> We do NOT hold elections for a full 5 years. The new government is elected ONLY for the remaining time (2026-2029). <br><br>The cycle resets perfectly for everyone in 2029.</p>
+            </div>
+        </div>
+
+        <!-- CHALLENGE 2: LOGISTICS -->
+        <div class="crisis-card">
+            <div class="crisis-header">
+                <span class="icon">🗳️</span>
+                <h3>CRISIS: Machine Shortage</h3>
+            </div>
+            <div class="crisis-body">
+                <p><strong>Scenario:</strong> We need 30 Lakh EVMs instantly for a simultaneous election. The cost is ₹10,000 Crores upfront. It seems too expensive!</p>
+                <button class="solve-btn" onclick="revealSolution(this)">See Solution</button>
+            </div>
+            <div class="solution-body">
+                <div class="solution-tag">AMORTIZATION STRATEGY</div>
+                <p><strong>Logic:</strong> While upfront cost is high, EVMs last for 15 years (3 Cycles). By combining logistics, security, and travel costs into one event, the <strong>Cost Per Voter</strong> actually decreases significantly over 15 years.</p>
+            </div>
+        </div>
+
+        <!-- CHALLENGE 3: REGIONAL ISSUES -->
+        <div class="crisis-card">
+            <div class="crisis-header">
+                <span class="icon">🗣️</span>
+                <h3>CRISIS: Local Voice Lost?</h3>
+            </div>
+            <div class="crisis-body">
+                <p><strong>Scenario:</strong> Critics fear voters will get swept by a "National Wave" and ignore local issues like water and schools. Regional parties might die.</p>
+                <button class="solve-btn" onclick="revealSolution(this)">See Solution</button>
+            </div>
+            <div class="solution-body">
+                <div class="solution-tag">SMART VOTER BEHAVIOR</div>
+                <p><strong>Logic:</strong> Data from Odisha (2019) shows voters are smart. They voted differently for State (BJD) and Center (BJP) on the same day.<br><br><strong>Solution:</strong> Distinct Voter Education (Like this platform) and Separate Queues.</p>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section id="ai">
@@ -151,30 +301,201 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 <script>
-new Swiper(".swiper",{
-  slidesPerView:3,
-  spaceBetween:30,
-  centeredSlides:true,
-  loop:true,
-  pagination:{el:".swiper-pagination",clickable:true},
-  navigation:{
-    nextEl:".swiper-button-next",
-    prevEl:".swiper-button-prev"
-  },
-  breakpoints:{
-    0:{slidesPerView:1},
-    768:{slidesPerView:2},
-    1024:{slidesPerView:3}
-  }
-});
+  // Swiper initialization
+  new Swiper(".swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+
+  // Bar Chart – Cost Comparison
+  const costCtx = document.getElementById('costChart').getContext('2d');
+  new Chart(costCtx, {
+    type: 'bar',
+    data: {
+      labels: ['Separate Elections', 'Simultaneous Elections'],
+      datasets: [{
+        label: 'Estimated Cost (₹ Crore)',
+        data: [5000, 3000],
+        backgroundColor: ['#DBBCDF', '#916496'],
+        borderColor: ['#E07A7A', '#6F86E8']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Cost (Crores)',
+            font: { size: 14, weight: 'bold' }
+          },
+          ticks: {
+            callback: function(value) {
+              return value + ' Cr';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  // Donut Chart – Cost Breakdown
+  const breakdownCtx = document.getElementById('breakdownChart').getContext('2d');
+  new Chart(breakdownCtx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Security', 'Logistics', 'EVM & VVPAT', 'Administration'],
+      datasets: [{
+        data: [40, 25, 20, 15],
+        backgroundColor: ['#916496', '#BC8BC2', '#DBBCDF', '#F4E3F6'],
+        borderColor: "#FFFFFF"
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom' }
+      }
+    }
+  });
 </script>
+
 
 <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/12/29/05/20251229053732-LPEJG7NS.js" defer></script>
 
+<script>
+    // --- 1. SETUP AUDIO FILES ---
+
+    const audioEn = new Audio('english.mp3');
+    const audioHi = new Audio('hindi.mp3');
+
+    // --- 2. TEXT CONTENT (Hero + 7 Cards) ---
+    const content = {
+        "hero-title": { en: "Voter Education & Awareness Platform", hi: "मतदाता शिक्षा और जागरूकता मंच" },
+        "hero-desc": { en: "Neutral, verified and simple explanations about elections and One Nation One Election.", hi: "चुनाव और 'एक राष्ट्र एक चुनाव' के बारे में निष्पक्ष, सत्यापित और सरल स्पष्टीकरण।" },
+        "btn-speak": { en: "🔊 Listen to Summary", hi: "🔊 सारांश सुनें" },
+        "btn-lang": { en: " Read in Hindi", hi: " Read in English" },
+        
+
+        // Cards
+        "t1": { en: "Simultaneous Elections in Early Years", hi: "प्रारंभिक वर्षों में एक साथ चुनाव" },
+        "d1": { en: "From 1951-52 to 1967, elections to the Lok Sabha and State Legislative Assemblies were largely held simultaneously.", hi: "1951-52 से 1967 तक, लोकसभा और राज्य विधानसभाओं के चुनाव काफी हद तक एक साथ आयोजित किए गए थे।" },
+        "t2": { en: "Frequent Elections and Their Consequences", hi: "बार-बार चुनाव और उनके परिणाम" },
+        "d2": { en: "At present, elections in India are held almost every year, leading to repeated electoral processes.", hi: "वर्तमान में, भारत में लगभग हर साल चुनाव होते हैं, जिससे बार-बार चुनावी प्रक्रियाएं होती हैं।" },
+        "t3": { en: "Administrative, Security, and Development Impact", hi: "प्रशासनिक, सुरक्षा और विकास पर प्रभाव" },
+        "d3": { en: "Frequent elections cause heavy public expenditure and prolonged enforcement of the Model Code of Conduct.", hi: "बार-बार चुनाव से भारी सार्वजनिक व्यय होता है और आचार संहिता लागू रहने से विकास कार्यों में देरी होती है।" },
+        "t4": { en: "Law Commission’s Recommendation (170th Report)", hi: "विधि आयोग की सिफारिश (170वीं रिपोर्ट)" },
+        "d4": { en: "The Law Commission recommended holding Lok Sabha and State Assembly elections together every five years.", hi: "विधि आयोग ने सिफारिश की कि लोकसभा और विधानसभा चुनाव हर पांच साल में एक साथ होने चाहिए।" },
+        "t5": { en: "Parliamentary Standing Committee Recommendation", hi: "संसदीय स्थायी समिति की सिफारिश" },
+        "d5": { en: "The Parliamentary Standing Committee examined the feasibility of simultaneous elections.", hi: "संसदीय स्थायी समिति ने एक साथ चुनाव की व्यवहार्यता की जांच की।" },
+        "t6": { en: "Formation of High Level Committee (HLC)", hi: "उच्च स्तरीय समिति (HLC) का गठन" },
+        "d6": { en: "The Government constituted a High Level Committee to examine simultaneous elections.", hi: "सरकार ने एक साथ चुनाव की जांच के लिए एक उच्च स्तरीय समिति का गठन किया।" },
+        "t7": { en: "Simultaneous Elections as National Interest", hi: "एक साथ चुनाव: राष्ट्रीय हित" },
+        "d7": { en: "The Government stated that holding simultaneous elections is desirable in the national interest.", hi: "सरकार ने कहा कि एक साथ चुनाव कराना राष्ट्रीय हित में वांछनीय है।" }
+    };
+
+    let isHindi = false;
+
+    // --- 3. TOGGLE LANGUAGE (Visual Text) ---
+    function toggleLanguage() {
+        isHindi = !isHindi;
+
+        // STOP any audio playing when switching languages
+        stopAudio();
+
+        // Update Buttons
+        document.getElementById("btn-speak").innerText = content["btn-speak"][isHindi ? "hi" : "en"];
+        document.getElementById("btn-lang").innerText = content["btn-lang"][isHindi ? "hi" : "en"];
+        
+        // Update Hero Text
+        document.getElementById("hero-title").innerText = content["hero-title"][isHindi ? "hi" : "en"];
+        document.getElementById("hero-desc").innerText = content["hero-desc"][isHindi ? "hi" : "en"];
+
+        // Update All Cards (Loop 1 to 7)
+        for(let i=1; i<=7; i++) {
+            if(document.getElementById("t"+i)) document.getElementById("t"+i).innerText = content["t"+i][isHindi ? "hi" : "en"];
+            if(document.getElementById("d"+i)) document.getElementById("d"+i).innerText = content["d"+i][isHindi ? "hi" : "en"];
+        }
+    }
+
+    // --- 4. TOGGLE SPEECH (MP3 Logic) ---
+    function toggleSpeech() {
+        const btn = document.getElementById("btn-speak");
+        const activeAudio = isHindi ? audioHi : audioEn; // Select file based on language
+
+        // If audio is currently playing...
+        if (!activeAudio.paused) {
+            stopAudio();
+            btn.innerText = content["btn-speak"][isHindi ? "hi" : "en"];
+        } 
+        // If audio is silent...
+        else {
+            stopAudio(); // Ensure other language is stopped
+            activeAudio.play(); // Play new audio
+            btn.innerText = "⏹ Stop"; // Show Stop Icon
+
+            // When audio finishes naturally
+            activeAudio.onended = function() {
+                btn.innerText = content["btn-speak"][isHindi ? "hi" : "en"];
+            };
+        }
+    }
+
+    // Helper function to force stop everything
+    function stopAudio() {
+        audioEn.pause();
+        audioEn.currentTime = 0; // Rewind to start
+        audioHi.pause();
+        audioHi.currentTime = 0; // Rewind to start
+    }
+</script>
+
+<script>
+    function revealSolution(btn) {
+        // Find the parent card
+        const card = btn.closest('.crisis-card');
+        
+        // Hide the "Scenario" text and button
+        const crisisBody = card.querySelector('.crisis-body');
+        crisisBody.style.display = 'none';
+        
+        // Show the "Solution" text
+        const solutionBody = card.querySelector('.solution-body');
+        solutionBody.style.display = 'block';
+        
+        // Change Header Color to Green (Success)
+        const header = card.querySelector('.crisis-header');
+        header.style.background = '#f0fff4';
+        header.style.borderBottom = '1px solid #c6f6d5';
+        header.querySelector('h3').style.color = '#2f855a';
+        header.querySelector('h3').innerText = "SOLVED: " + header.querySelector('h3').innerText.replace("CRISIS: ", "");
+        header.querySelector('.icon').innerText = "✅";
+    }
+</script>
+
 <footer>
+  © 2026 Voter Education Platform | Polaris<br>
   Sources: Election Commission of India | Govt. Reports  
-  <br>Educational simulation only.
 </footer>
 
 </body>
