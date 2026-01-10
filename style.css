@@ -221,7 +221,7 @@ footer {
 /* IMPACT SECTION */
 .impact-section {
   padding: 60px 20px;
-  background-color: #e8ebff;
+  
   text-align: center;
 }
 
@@ -401,28 +401,6 @@ footer {
   padding: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .stats-grid,
-  .comparison,
-  .graph-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .impact-section h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .impact-items {
-    flex-direction: column;
-  }
-
-  .impact-item {
-    width: 100%;
-  }
-}
 
 /* OUTER WRAPPER */
 #combined {
@@ -470,17 +448,6 @@ footer {
   align-self: center;
   margin-top: auto;
   border: 1px solid rgba(255,255,255,0.9);
-}
-
-/* MOBILE VIEW */
-@media (max-width: 768px) {
-  .combined-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #combined {
-    padding: 40px 20px;
-  }
 }
 
 #btn-speak , #btn-lang {
