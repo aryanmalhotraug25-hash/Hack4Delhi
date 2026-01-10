@@ -141,6 +141,9 @@ section {
   filter: blur(1px);
   transform: scale(0.94);
   transition: all 0.4s ease;
+  width: 70%;
+  justify-content: center;
+  display: flex;
 }
 
 .swiper-slide-active {
