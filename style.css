@@ -467,7 +467,7 @@ footer {
 
 #btn-lang:hover {
   background:var(--secondary);
-  color: var(--primary);
+  color: white;
   opacity: 0.7;
 }
 
