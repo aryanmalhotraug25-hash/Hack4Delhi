@@ -71,10 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>VVPAT Confirmation</h3>
       <p><strong>Candidate:</strong> ${candidate.name}</p>
       <p><strong>Party:</strong> ${candidate.party}</p>
-      <p style="font-size:0.85rem; color:#6b7280;">This slip will disappear in 3 seconds</p>
+      <p style="font-size:0.85rem; color:#6b7280;">(This slip will disappear in 7 seconds)</p>
     `;
     system.slip.classList.add("show");
-    setTimeout(() => system.slip.classList.remove("show"), 3000);
+    setTimeout(() => system.slip.classList.remove("show"), 7000);
   }
 
   // Boot sequence
@@ -111,13 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (sysKey === "lok") {
         setTimeout(() => {
           unlockSystem(SYSTEMS.vid);
-        }, 500);
+        }, 200);
       }
 
       // Lock the machine again after slip disappears
       setTimeout(() => {
         lockSystem(system);
-      }, 3100);
+      }, 100);
     });
   });
 });

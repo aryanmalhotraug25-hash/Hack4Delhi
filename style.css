@@ -263,33 +263,6 @@ footer {
   color: #444;
 }
 
-/* COMPARISON */
-.comparison {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto 30px;
-  text-align: left;
-}
-
-.comparison h4 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.comparison ul {
-  padding-left: 18px;
-  color: #444;
-}
-
-.disclaimer {
-  font-size: 0.8rem;
-  color: #666;
-  max-width: 800px;
-  margin: auto;
-}
-
 /* GRAPH SECTION */
 .graph-section {
   margin: 60px auto;

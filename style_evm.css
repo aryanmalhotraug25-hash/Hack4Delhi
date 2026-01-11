@@ -143,6 +143,7 @@ header p {
 }
 .green { background: #10b981; }
 .red { background: #d7263d; }
+
 .light.active {
   opacity: 1;
   box-shadow: 0 0 8px currentColor;
@@ -176,7 +177,7 @@ header p {
   border: 1px solid #f5d48a;
   border-radius: 8px;
   padding: 12px;
-  text-align: center;
+  text-align: center; 
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: bottom 0.6s ease-in-out, opacity 0.4s ease-in-out;
   opacity: 0;
@@ -186,16 +187,8 @@ header p {
   opacity: 1;
 }
 
-/* Footer */
 footer.site-footer {
   text-align: center;
   color: #6b7280;
   margin: 30px 0;
-}
-
-/* Responsive layout */
-@media (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
 }
